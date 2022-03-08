@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 320px;
+            height: 240px;
+        }
+
+        .RWD {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 0 auto;
+        }
+
+        .img-flex {
+            display: block;
+            flex-basis: 10%;
+        }
+
+        @media screen and (min-width:500px) and (max-width:700px) {
+            .img-flex {
+                flex-basis: 48%;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .img-flex {
+                flex-basis: 100%;
+            }
+
+        }
+        @media screen and (min-width:701px)  {
+            img {
+                width: 50px;
+            }
+            .img-flex {
+                flex-basis: 25%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Pc</h1>
+    <div class="RWD">
+        <img class="img-flex" src="/img/hinh-anh-meme-che-mat-tham-quang_082101433.jpg" alt="">
+        <img class="img-flex" src="/img/hinh-anh-meme-che-mat-tham-quang_082101433.jpg" alt="">
+        <img class="img-flex" src="/img/hinh-anh-meme-che-mat-tham-quang_082101433.jpg" alt="">
+        <img class="img-flex" src="/img/hinh-anh-meme-che-mat-tham-quang_082101433.jpg" alt="">
+
+    </div>
+</body>
+
+</html>
